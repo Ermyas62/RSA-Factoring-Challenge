@@ -26,7 +26,7 @@ def factorize(n):
     f = lambda x: (x**2 + 1) % n
     while d == 1:
         x = f(x)
-        y = f{f{x})
+        y = f(f(y))
         d = math.gcd(abs(x - y), n)
     return d
 
