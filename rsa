@@ -39,6 +39,8 @@ def factorize_file(file_path):
                 while not is_prime(p) and p != number:
                     p = pollard_rho(p)
             if p == number:
+                print(f"{number}")
+            else:
                 print(f"{number}={p}*{number // p}")
 
 if __name__ == "__main__":
